@@ -1,0 +1,14 @@
+id,naziv_hr,latinski,narodni_nazivi,duzina_cm,staniste,napomena_uzgoj,izvor,pouzdanost
+V01,češljugar,Carduelis carduelis,ciganče;gardelin;grdelin;grdel;štiglec;štiglić;lišćek;staglin,12,voćnjaci;rubovi šuma;parkovi,najomiljenija pjevica u Splitu od 18. st.; autohtona za uzgoj u letarkama uz uvjete ministarstva,rad 2.5 (Heinzel 1999),literatura
+V02,zelendur,Chloris chloris,greling;gringl;tarant;verdon;verdun;vrdun,14.5,kao češljugar,autohtona za uzgoj,rad 2.5 (Heinzel 1999),literatura
+V03,juričica,Linaria cannabina,faganel;faganjel;fanganel;jurčak;juriš;jurka,13.5,vrištine;makije;rubovi šuma;niska stabla;zimi otvorene površine,autohtona za uzgoj,rad 2.5 (Heinzel 1999),literatura
+V04,čižak,Spinus spinus,cajzl;lugarin;lugerin;zelenčica,12,crnogorične i smrekove šume;zimi johe i smreke,autohtona za uzgoj,rad 2.5 (Heinzel 1999),literatura
+V05,žutarica,Serinus serinus,frizelin;frizel;frzelin;fržulin;girlitz;hercer;kanarinka;štancajzl,11.5,rubovi šuma;voćnjaci;parkovi;vrtovi,najmanja europska zeba; autohtona za uzgoj,rad 2.5 (Heinzel 1999),literatura
+V06,zimovka,Pyrrhula pyrrhula,gimpel;gimpla;zimnica,14.5-16,crnogorične šume;grmlje;voćnjaci uz šume,u radu i kao "zmovka",rad 2.5 (Heinzel 1999),literatura
+V07,zeba,Fringilla coelebs,bitkavac;finka;finko,15,šume;šikare;parkovi;zimi jata,najčešća europska zeba,rad 2.5 (Heinzel 1999),literatura
+V08,kanarinac,Serinus canaria,,,,uvoz u Europu od 1400-ih; procvat sred. 19. st. (Harz); u Dalmaciju preko pomoraca kroz Split; teren: Mostar-Mahala (kanarinci boje),rad 2.1 + teren,literatura+opaženo
+V09,tigrica,Melopsittacus undulatus,,,,od sred. 19. st. potiskuje kanarinca u Europi,rad 2.1,literatura
+V10,papige (amazone; srednje i male),Amazona spp. i dr.,,,,teren: Banja Luka (vanjske volijere za amazone); Podstrana; na kontinentu više papige i egzote,teren + rad 2.1,navedeno
+V11,čvorak,Sturnus vulgaris,,,,teren: Kričke — objekt prilagođen čvorcima,teren,opaženo
+V12,križanci (europska fauna × kanarinac),,,,,Zagreb krajem 1960-ih središte uzgoja križanaca u Jugoslaviji; teren: Sarajevo-Ilidža,rad 2.1 + teren,navedeno
+V13,prepelice,Coturnix spp.,,,,podna vrsta u velikim volijerama — skuplja hranu ispalu iz hranilica,rad 2.2.1.3,autorsko

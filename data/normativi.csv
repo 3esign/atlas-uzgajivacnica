@@ -1,0 +1,27 @@
+id,tema,parametar,vrijednost,jedinica,uvjet,izvor,pouzdanost
+N01,volijera u nizu,modul D×V×Š,1.30 × 2.20 × 2.00,m,uzgoj ili prelet,rad 2.2.1.2 + teren (Podstrana; Zadar),opaženo+autorsko
+N02,volijera u nizu,konstrukcija,metal (temeljna + završna boja); betonski temelj; daščani pod; lim i kosi izolirani krov; bočni ulaz s hodnikom,,,rad 2.2.1.2,autorsko
+N03,velika volijera za prelet,mreža,okce ~25 (što manje to bolje zbog miševa),mm,,rad 2.2.1.3,autorsko
+N04,velika volijera za prelet,obloga,leksan (polikarbonat) na prednjoj; bočnoj i stražnjoj strani — zaštita i svjetlo,,,rad 2.2.1.3,autorsko
+N05,velika volijera,pod,beton ili zemlja; autohtono bilje u loncima (povremeno se mijenja),,,rad 2.2.1.3,autorsko
+N06,prostorija s kavezima,zidovi i pod,opeka ili knauf; pločice; perivo i dezinficirano,,kanarinci,rad 2.2.1.1,autorsko
+N07,prostorija s kavezima,oprema,metalni stolovi za krletke; WC+tuš+umivaonik; mini kuhinja; obavezan ventilator; klima i ovlaživač u sezoni grijanja,,,rad 2.2.1.1,autorsko
+N08,materijal,ocjena,zidano najbolje; metal najlošiji (temperaturne varijacije); drvo nepoželjno izvan grada (poljski miševi),,,rad 1.1 + 2.2.1.1,autorsko
+N09,klima,orijentacija,puni zatvoreni dio prema sjeveru; vjetrobran sa sjeverne strane; zatvoreni dio i vanjski prelet spojeni otvorom koji se zimi zatvara,,,rad 2.2.2 (AFA Watchbird),literatura
+N10,sigurnost,ograda (primjer),1.8,m,uz bežični alarm s audio nadzorom,rad 2.2.7 (AFA),literatura
+N11,sigurnost,ograda (maksimum),3-3.5,m,uz žilet-žicu; pse; kamere; bez posjetitelja,rad 2.2.7 (AFA),literatura
+N12,infrastruktura,rezerva struje,agregat s automatskom sklopkom; prioritet bunar-pumpa-zamrzivači-grijanje-rasvjeta,,ruralno,rad 2.2.8 (AFA),literatura
+N13,proširenje,rezerva veličine,35-40,%,primjer zgrade 9×36 m,rad 2.2.6 (AFA),literatura
+N14,zoniranje,min. parcela izvan građevinskog područja,10000,m2,poljoprivredno zemljište; ako plan dopušta farme,rad 2.2,autorsko
+N15,zoniranje,stambena zona,samo hobi u gabaritu pomoćne zgrade; komercijalno zabranjeno ili ograničeno brojem jedinki,,,rad 2.2 (Marinović-Uzelac),literatura
+N16,dozvole HR,prag površine,50,m2,do 50 m² pomoćni uz legalnu kuću: glavni projekt bez GD; preko 50 m²: građevinska dozvola,rad 3.5 (NN 112/17; 155/23),propis
+N17,odmaci,od osi ceste,5-10,m,,rad 3.4,autorsko
+N18,odmaci,od međe,3-4,m,zbog buke,rad 3.4,autorsko
+N19,pristup,kolni pristup min. širina,3-5,m,uz vodu i riješenu odvodnju,rad 3.4,autorsko
+N20,biosigurnost,ulaz,zračna komora (predprostor) i dvostruka mreža,,blizu Natura 2000,rad 3.2 + 3.5,autorsko
+N21,otpadne vode,krš,vodonepropusna sabirna jama ili biopročistač; podni sifoni s taložnikom i separatorom perja,,krški teren,rad 3.3,autorsko
+N22,zeleni krov,ekstenzivni supstrat,6-15,cm,Sedum; Sempervivum,rad 2.4,literatura
+N23,zeleni krov,intenzivni supstrat,do 60 i više,cm,,rad 2.4,literatura
+N24,zeleni krov,dodatno opterećenje intenzivnog,200-500,kg/m2,,rad 2.4,literatura
+N25,zeleni krov,zadržavanje oborina,50-90,%,,rad 2.4,literatura
+N26,buka,prag oštećenja sluha,>85,dB,dugotrajno,rad 2.3,literatura

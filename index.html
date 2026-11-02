@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d2a2c">
+<meta name="description" content="Atlas uzgajivačnica · Aviary Atlas — 2D, 2.5D i 3D vrt iz diplomskog rada Lucije Jurlin Dorbić, Univerzitet u Travniku.">
+<title>Atlas uzgajivačnica · Aviary Atlas</title>
+<link rel="modulepreload" href="vendor/three/three.module.js">
+<link rel="preload" href="data/zgrada.json" as="fetch" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%23e9b85c%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="atlas.css">
+</head>
+<body>
+<section id="maketa" aria-label="2D / 2.5D / 3D">
+  <div id="scena3d" data-pogled="maketa">
+    <div id="pinovi"></div>
+    <div id="vinjeta"></div>
+    <div id="pomoc3d" role="status"></div>
+    <div id="hud-joy" hidden><span></span></div>
+    <button id="hud-blizu" class="hud" hidden>ⓘ <span></span></button>
+    <div class="hud-stub"><button id="hud-gore" class="hud" hidden aria-label="gore">↑</button><button id="hud-dolje" class="hud" hidden aria-label="dolje">↓</button></div>
+    <button id="hud-pauza" class="hud" hidden data-t-hr="Klikni za nastavak šetnje" data-t-en="Click to resume walking"></button>
+  </div>
+
+  <header id="traka">
+    <div class="znak"><b data-hr="Atlas uzgajivačnica" data-en="Aviary Atlas"></b><span class="autori"></span></div>
+    <div class="gumbi">
+      <button id="zvuk" aria-label="zvuk / sound" title="zvuk / sound">♪</button>
+      <button id="postavke" aria-label="postavke / settings" title="postavke / settings">☀</button>
+      <button id="cijeli" aria-label="cijeli zaslon / fullscreen" title="cijeli zaslon / fullscreen">⛶</button>
+      <button id="jezik" aria-label="Language">EN</button>
+    </div>
+  </header>
+  <div id="ploca" class="staklo" hidden>
+    <label><span data-t-hr="Doba dana" data-t-en="Time of day"></span>
+      <input type="range" name="doba" min="0" max="1" step="0.01" value="0.62"></label>
+    <div class="skala"><span data-t-hr="jutro" data-t-en="morning"></span><span data-t-hr="podne" data-t-en="noon"></span><span data-t-hr="zalazak" data-t-en="sunset"></span></div>
+    <label><span data-t-hr="Kvaliteta" data-t-en="Quality"></span>
+      <select name="kvaliteta"><option value="niska">niska · low</option><option value="srednja">srednja · medium</option><option value="visoka">visoka · high</option></select></label>
+    <p class="fps"></p>
+    <button class="uredu">OK</button>
+  </div>
+
+  <div id="etaze" class="staklo" hidden></div>
+  <div id="tura" class="staklo" hidden>
+    <div class="red"><span class="br"></span><b class="n"></b></div>
+    <p class="t"></p>
+    <div class="red">
+      <button class="nazad" aria-label="nazad">←</button>
+      <button class="otvori" data-t-hr="Kartica" data-t-en="Card"></button>
+      <button class="dalje" aria-label="dalje">→</button>
+    </div>
+  </div>
+  <nav id="dok" class="staklo" aria-label="pogledi / views"></nav>
+  <aside id="kartica" class="staklo" hidden>
+    <button class="zatvori" aria-label="zatvori / close">×</button>
+    <div class="sadrzaj"></div>
+    <a class="uatlas" href="#vrt" data-t-hr="Više u atlasu ↓" data-t-en="More in the atlas ↓"></a>
+  </aside>
+  <a id="dolje" href="#atlas" data-t-hr="Atlas ↓" data-t-en="Atlas ↓"></a>
+
+  <div id="veo">
+    <div class="sredina">
+      <p class="nad">Donje Polje · Šibenik · 2D · 2.5D · 3D</p>
+      <h1 data-hr="Atlas uzgajivačnica" data-en="Aviary Atlas"></h1>
+      <p class="autori"></p>
+      <p class="stanje">…</p>
+      <div class="ulazi">
+        <button id="ulaz" data-t-hr="Uđi u vrt" data-t-en="Enter the garden"></button>
+        <button id="ulaz-zvuk" data-t-hr="Tura sa zvukom ♪" data-t-en="Tour with sound ♪"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="studio2d" aria-label="2D / 2.5D Grafički studio"></section>
+
+<header id="atlas">
+  <h1 data-hr="Atlas uzgajivačnica" data-en="Aviary Atlas"></h1>
+  <p class="autori"></p>
+</header>
+<nav id="stanice"></nav>
+<main id="vrt"><noscript>JavaScript je potreban za čitanje podataka.</noscript></main>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/controls/":"./vendor/three/controls/"}}</script>
+<script src="src/main.js"></script>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>

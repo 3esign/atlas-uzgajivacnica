@@ -1,0 +1,24 @@
+'use strict';
+const { build } = require('../build.js');
+const a = build(); let fail = 0;
+const ok = (c, m) => { console.log((c ? 'ok   ' : 'FAIL ') + m); if (!c) fail++; };
+const POUZ = /^(opaženo|navedeno|projektirano|literatura|autorsko|propis)(\+(opaženo|navedeno|projektirano|literatura|autorsko|propis))*$/;
+ok(a.objekti.length === 14, 'objekti: 14 zapisa');
+ok(new Set(a.objekti.map(o => o.id)).size === a.objekti.length, 'objekti: jedinstveni ID');
+ok(a.objekti.every(o => /^[A-Z]{2}-\d{2}$/.test(o.id)), 'objekti: ID oblik XX-00');
+for (const [n, r] of [['objekti', a.objekti], ['vrste', a.vrste], ['normativi', a.normativi]])
+  ok(r.every(x => POUZ.test(x.pouzdanost)), `${n}: pouzdanost iz rečnika` + (r.filter(x => !POUZ.test(x.pouzdanost)).map(x => ' ' + x.id + '=' + x.pouzdanost).join('')));
+ok(a.objekti.every(o => !o.tip || /^[A-D]$/.test(o.tip)), 'objekti: tip A–D');
+ok(a.objekti.every(o => o.lat === '' || o.drzava !== 'HR' && o.drzava !== 'BA' || (+o.lat > 42 && +o.lat < 46 && +o.lon > 13 && +o.lon < 20)), 'objekti: koordinate HR/BiH u regiji (Modena kao referenca izvan)');
+ok(a.objekti.every(o => o.lat === '' || /^\d+\.\d{1,2}$/.test(o.lat)), 'privatnost: koordinate zaokružene na ≤2 decimale');
+const txt = JSON.stringify(a.objekti);
+ok(!/@|\+?\d{3}[ \/-]?\d{3}[ -]?\d{3,4}|ulica|ul\.\s/i.test(txt), 'privatnost: bez e-pošte, telefona, ulica');
+ok(a.sinteza[0].hr.includes('5 od 10'), 'sinteza S1: tip A 5 od 10');
+ok(a.sinteza[1].hr.startsWith('Medijan površine 25 m²'), 'sinteza S2: medijan 25 m²');
+ok(a.sinteza.every(s => s.redovi.every(id => a.objekti.some(o => o.id === id))), 'sinteza: svaki red postoji');
+const pz = a.projekt.filter(p => p.etaza === 'prizemlje').reduce((s, p) => s + (+p.povrsina_m2 || 0) * (+p.broj || 1), 0);
+ok(Math.abs(pz - 74.49) < 0.02, `projekt: zbir prizemlja 74,49 m² (dobijeno ${pz.toFixed(2)})`);
+const st = a.vrt.stabla;
+ok(st.cempres === 16 && st.maslina === 9 && st.bagrem === 7 && st.lovor === 4 && st.smokva === 1, 'vrt: stabla kao list 1 ' + JSON.stringify(st));
+ok(a.vrt.lavanda === 234 && a.vrt.kucice === 3 && a.vrt.pojiliste === 1, 'vrt: lavanda 234, kućice 3, pojilište 1');
+console.log(fail ? `\n${fail} FAIL` : '\nsve zeleno'); process.exit(fail ? 1 : 0);

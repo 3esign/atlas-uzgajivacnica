@@ -1,0 +1,15 @@
+id,vrsta_zapisa,drzava,mjesto,regija,kontekst,lat,lon,tip,smjestaj,konstrukcija,materijal,povrsina_m2,ptice,svjetlo,orijentacija,oprema,foto_u_radu,izvor,pouzdanost
+UZ-01,uzgajivacnica,HR,Zadar,obala,urbano,44.12,15.23,A,podrum kuće,pravokutna prostorija; metalni boksovi uz zidove,beton,30,,neon s regulacijom dana,I: hrana i sudoper,ormar za hranu; sudoper,da,rad 1.2; sl.17,opaženo
+UZ-02,uzgajivacnica,HR,Bibinje,obala,prigradsko,44.07,15.29,A,kuća,metalne volijere srednje veličine,beton+metal,,,,,,ne,rad 1.2,navedeno
+UZ-03,uzgajivacnica,HR,Drniš (Kričke),krško polje,ruralno,43.86,16.15,B,vrt,volijera 12x3 m; žičana mreža,metal,40,čvorci; ukrasne,prirodno,,kućice za gniježđenje; pojilište; autohtone biljke; komora za hranu,da,rad 1.2; sl.9-15,opaženo
+UZ-04,uzgajivacnica,HR,Sinj,krško polje,prigradsko,43.70,16.64,C,unutra+vani,natkrita vanjska volijera + unutarnje standardne volijere,beton+metal,20,europske pjevice,,,,da,rad 1.2; sl.1;5,opaženo
+UZ-05,uzgajivacnica,HR,Podstrana,obala,prigradsko,43.48,16.55,D,samostalni objekt,10+ velikih volijera u nizu + manje pojedinačne,metal,,europske pjevice; papige,,,gnijezda; hranilice; sanitarni čvor,da,rad 1.2; sl.3-14,opaženo
+UZ-06,uzgajivacnica,BA,Mostar,hercegovina,urbano,43.34,17.81,B,dvorište,volijera za preletanje omeđena žicom,metal+drvo,10,,prirodno,,,da,rad 1.2; sl.7,opaženo
+UZ-07,uzgajivacnica,BA,Mostar,hercegovina,urbano,43.34,17.81,A,potkrovlje,uzgojni kavezi uz sjeverni zid,,10,kanarinci boje,,S: kavezi,,ne,rad 1.2,navedeno
+UZ-08,uzgajivacnica,BA,Konjic,hercegovina,urbano,43.65,17.96,A,soba u kući,kavezi za parove + samostojeće volijere (mladi; mitarenje) + 2 ugradbene,,30,europske pjevice,neon + prozor,I: prozor,,da,rad 1.2; sl.6,opaženo
+UZ-09,uzgajivacnica,BA,Sarajevo (Ilidža),kontinent,urbano,43.83,18.31,A,garaža,klasični kavezi,,20,križanci,,,,ne,rad 1.2,navedeno
+UZ-10,uzgajivacnica,BA,Banja Luka,kontinent,prigradsko,44.77,17.19,C,kuća+dvorište,kavezi i volijere unutra; veće volijere u dvorištu (S),metal+beton,100,papige; amazone,,S: dvorišne volijere,,ne,rad 1.2,navedeno
+IZ-01,izlozba,HR,Sukošan,obala,,44.05,15.31,,izložba,izložbene volijere,,,,,,,da,sl.15,opaženo
+IZ-02,izlozba,HR,Čavle,primorje,,45.36,14.48,,izložba,izložbene volijere,,,,,,,da,sl.14,opaženo
+IZ-03,referenca,IT,Modena,,,44.65,10.93,,,ulošci za gnijezda,,,,,,,da,sl.2,opaženo
+PR-01,projekt,HR,Šibenik (Donje Polje),obala,prigradsko,43.73,15.95,C,samostalni objekt P+2,tipska volijera 1.30x2.20x2 m; unutra+vani,zidano,,autohtone vrste,,,krovni vrt; autohtono zelenilo,da,rad pogl.4; prilozi 1-10,projektirano
